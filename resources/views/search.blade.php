@@ -3,8 +3,8 @@
 
   <div class="main_section px-4 pt-2">
     <div class="movie_category mt-4">
-      <p><a class="btn btn-outline-dark btn-sm ml-2 float-right" onclick="window.history.back()">Back</a></p>
-      <p class="btn btn-outline-dark btn-sm ">RESULT FOR : {{strtoupper($param)}} </p>
+      <p><a class="btn btn-outline-dark btn-sm ml-2 float-right" onclick="window.history.back()">戻る</a></p>
+      <p class="btn btn-outline-dark btn-sm ">結果 : {{strtoupper($param)}} </p>
     </div>
         <div class="d-flex justify-content-center">{{$search_data->appends(array_except(Request::query(),'search_page'))->links()}}</div>
        <div class="row mt-3">

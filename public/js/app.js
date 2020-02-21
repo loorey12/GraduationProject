@@ -114,7 +114,7 @@
 $("#nightbutton").click(function(){
   $("#light-div").addClass("d-none");
   $("#dark-div").removeClass("d-none");
-  $("body").css('backgroundColor','#17202A');
+  $("body").css('backgroundColor','black');
   $(".panel-heading").addClass("text-light");
 });
 $("#daybutton").click(function(){
@@ -132,3 +132,11 @@ if($("#video-play").hasClass("advertisement")){
         window.open('www.google.com');
 })};
 
+$("#grid").click(function(){
+    $("#list-view").addClass("d-none");
+    $("#grid-view").removeClass("d-none");
+})
+$("#list").click(function(){
+    $("#grid-view").addClass("d-none");
+    $("#list-view").removeClass("d-none");
+})

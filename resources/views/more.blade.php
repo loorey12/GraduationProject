@@ -4,8 +4,8 @@
 <div class="main_section">
 @if(isset($popular_data))
     <div class="movie_category pt-3 px-4">
-        <p class="btn btn-outline-dark btn-sm">{{$name}}</p>
-        <a href="/index"><p class="btn btn-outline-dark btn-sm float-right ">BACK</p></a>
+        <p class="btn btn-danger">{{$name}}</p>
+        <a href="/index"><p class="btn btn-dark float-right ">戻る</p></a>
     </div>
     <div class="d-flex justify-content-center">{{$popular_data->links()}}</div>
     <div id="popular" class="row px-4">
@@ -21,8 +21,8 @@
 
 @elseif(isset($trending_data))
     <div class="movie_category pt-3 px-4">
-        <p class="btn btn-outline-dark btn-sm">{{ $name }}</p>
-        <a href="/index"><p class="btn btn-outline-dark btn-sm float-right mt-3 ">BACK</p></a>
+        <p class="btn btn-danger">{{ $name }}</p>
+        <a href="/index"><p class="btn btn-dark float-right ">戻る</p></a>
     </div>
     <div class="d-flex justify-content-center">{{$trending_data->links()}}</div>
     <div id="popular" class="row px-4 ">
@@ -38,8 +38,8 @@
 
 @elseif(isset($now_playing_data))
     <div class=" movie_category pt-3 px-4">
-        <p class="btn btn-outline-dark btn-sm">{{ $name }}</p>
-        <a href="/index"><p class="btn btn-outline-dark btn-sm float-right mt-3 ">BACK</p></a>
+        <p class="btn btn-danger">{{ $name }}</p>
+        <a href="/index"><p class="btn btn-dark float-right ">戻る</p></a>
     </div>
     <div class="d-flex justify-content-center">{{$now_playing_data->links()}}</div>
     <div id="popular" class="row px-4">
@@ -55,8 +55,8 @@
 
 @elseif(isset($upcoming_data))
     <div class=" movie_category pt-3 px-4">
-        <p class="btn btn-outline-dark btn-sm">{{ $name }}</p>
-        <a href="/index"><p class="btn btn-outline-dark btn-sm float-right mt-3 ">BACK</p></a>
+        <p class="btn btn-danger">{{ $name }}</p>
+        <a href="/index"><p class="btn btn-dark float-right ">戻る</p></a>
     </div>
     <div class="d-flex justify-content-center">{{$upcoming_data->links()}}</div>
     <div id="popular" class="row px-4">
@@ -71,8 +71,8 @@
     <div class="d-flex justify-content-center">{{$upcoming_data->links()}}</div>
 @elseif(isset($dramas_data))
     <div class="movie_category pt-3 px-4">
-        <p class="btn btn-outline-dark btn-sm">{{ $name }}</p>
-        <a href="/index"><p class="btn btn-outline-dark btn-sm float-right mt-3 ">BACK</p></a>
+        <p class="btn btn-danger">{{ $name }}</p>
+        <a href="/index"><p class="btn btn-dark btn-sm float-right ">戻る</p></a>
     </div>
     <div class="d-flex justify-content-center">{{$dramas_data->links()}}</div>
     <div id="popular" class="row px-4">
@@ -88,6 +88,6 @@
 
 @endif
 
-    <p class="toggle-text text-center text-dark mb-0 mt-4 pb-3">A wide section of online movies are available on <span class="text-success font-weight-bold">HQM</span> MOVIES. You can watch online movies for free without registeration.</p>
+    <p class="toggle-text text-center text-secondary  mb-0  pb-3">オンライン映画の幅広いセクションが<span class="text-danger font-weight-bold"> HQM</span> MOVIESで利用できます。登録なしで無料でオンライン映画を見ることができます。</p>
 </div>
 @endsection

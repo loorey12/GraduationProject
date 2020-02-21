@@ -24,7 +24,7 @@ class ComposerServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        View::composer(['index','main','play','search','errors.errors','more','mymovielist'],
+        View::composer(['index','main','play','search','errors.errors','more','mymovielist','notice','ranking'],
         'App\Http\ViewComposers\ViewDataComposer');
     }
 }

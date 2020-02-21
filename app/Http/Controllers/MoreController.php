@@ -15,7 +15,7 @@ class MoreController extends Controller
         $result = array_merge($data[1],$data[2],$data[3],$data[4]);
         $trending = $result;
         $trending_data = $logic ->data($trending, 'trending_page','trendingLink');
-        return view('more')->with('trending_data',$trending_data)->with('name','TRENDING MOVIES');
+        return view('more')->with('trending_data',$trending_data)->with('name','トレンド');
     }
     public function popular(){
         $logic = new Logic();
@@ -25,7 +25,7 @@ class MoreController extends Controller
         $result = array_merge($data[1],$data[2],$data[3],$data[4]);
         $popular = $result;
         $popular_data = $logic ->data($popular,'popular_page','popularLink');
-        return view('more')->with('popular_data',$popular_data)->with('name','POPULAR MOVIES');
+        return view('more')->with('popular_data',$popular_data)->with('name','ポピュラー');
     }
     public function latest(){
         $logic = new Logic();
@@ -35,7 +35,7 @@ class MoreController extends Controller
         $result = array_merge($data[1],$data[2],$data[3],$data[4]);
         $now_playing = $result;
         $now_playing_data = $logic->data($now_playing, 'now_playing_page','latestLink');
-        return view('more')->with('now_playing_data',$now_playing_data)->with('name','LATEST MOVIES');
+        return view('more')->with('now_playing_data',$now_playing_data)->with('name','上映中の映画');
     }
     public function commingSoon(){
         $logic = new Logic();
@@ -45,7 +45,7 @@ class MoreController extends Controller
         $result = array_merge($data[1],$data[2],$data[3],$data[4]);
         $upcoming = $result;
         $upcoming_data = $logic->data($upcoming,'upcoming_page','upcomingLink');
-        return view('more')->with('upcoming_data',$upcoming_data)->with('name','COMMING SOON MOVIES');
+        return view('more')->with('upcoming_data',$upcoming_data)->with('name','今週公開の映画');
     }
     public function dramas(){
         $logic = new Logic();
@@ -55,7 +55,7 @@ class MoreController extends Controller
         $result = array_merge($data[1],$data[2],$data[3],$data[4]);
         $dramas = $result;
         $dramas_data = $logic->data($dramas,'dramas_page','dramasLink');
-        return view('more')->with('dramas_data',$dramas_data)->with('name','DRAMAS');
+        return view('more')->with('dramas_data',$dramas_data)->with('name','ドラマ');
     }
 
 }
