@@ -13,5 +13,5 @@
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
 <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Monoton&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="{{ secure_asset('css/style.css') }}" rel="stylesheet">
+<link rel="stylesheet" href="{{ secure_asset('asset/css/style.css') }}" rel="stylesheet">
 <title>HQ MOVIE</title>
